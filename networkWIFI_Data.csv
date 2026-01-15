@@ -1,0 +1,8 @@
+Network,Parameter,Value,Status/Quality
+Wi-Fi,SSID,DNA-WIFI-5GHZ-A827,Connected
+Wi-Fi,Signal Strength,-45 dBm,Excellent
+Wi-Fi,Channel,56 (5 GHz),Non-congested
+Wi-Fi,Standard,802.11ac,Wi-Fi 5
+LAN,Gateway IP,192.168.101.1,Online
+Cellular,Operator,Saunalahti (244-05),LTE Active
+Cellular,Signal Strength,-69 dBm,Strong
