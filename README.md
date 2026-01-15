@@ -65,3 +65,26 @@ Router Placement: Ensure the router is not placed near other electronic devices 
 
 Security Update: The network currently uses WPA2 (AES). If the hardware supports it, upgrading to WPA3 would provide better protection against modern "offline dictionary" attacks.
 Router Repositioning: Given the excellent -45 dBm signal, the current placement is ideal. If dead zones appear, move the router to an elevated, central location.
+
+The local network analysis of the DNA-WIFI-5GHZ-A827 environment provides a clear example of how frequency band selection and physical proximity dictate wireless performance. Based on the measurements and troubleshooting conducted, the following key findings were established:
+
+1. The Critical Advantage of the 5 GHz Band
+The most significant finding was the disparity between the 2.4 GHz and 5 GHz environments.
+
+Performance: The connected 5 GHz network achieved a link speed of 866 Mbps with an excellent signal of -45 dBm.
+
+Congestion: While the 2.4 GHz band was heavily saturated by institutional networks like Savonia and eduroam (leading to high potential for Co-Channel Interference), the Channel 56 used by the 5 GHz network was entirely clear of competing SSIDs.
+
+2. Signal Quality vs. Physical Environment
+The data confirms that physical distance is the primary driver of signal degradation (attenuation).
+
+Proximity: The -45 dBm reading indicates the device was in the immediate vicinity of the router.
+
+Coverage Range: Nearby APs showing signals as low as -73 dBm demonstrate how signal power drops significantly as it travels through building materials and distance, eventually reaching levels where high-speed modulation is no longer possible.
+
+3. Integrated Device Ecosystem
+The discovery phase showed a diverse ecosystem of devices sharing the local network:
+
+LAN Connectivity: The network successfully managed multiple clients (Samsung SM-A346B and LG LMG4-IVL5) without IP conflicts, utilizing a standard Class C private subnet (192.168.101.x).
+
+Cross-Protocol Interference: The BLE Scanner identified multiple Bluetooth devices in the area. While they did not cripple the Wi-Fi connection, they contribute to the overall noise in the 2.4 GHz spectrum, further justifying the use of the 5 GHz band for primary data tasks.
